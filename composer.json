@@ -1,0 +1,23 @@
+{
+  "name": "allingo/notifications-client",
+  "description": "Thin client to dispatch predefined notifications via AllinGo B2B backend (Laravel/Lumen).",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "AllinGo\\NotificationsClient\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.2",
+    "guzzlehttp/guzzle": "^7.8|^8.0",
+    "illuminate/support": "*"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AllinGo\\NotificationsClient\\NotificationsClientServiceProvider"
+      ]
+    }
+  }
+}
